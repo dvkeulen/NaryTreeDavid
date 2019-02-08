@@ -6,7 +6,11 @@ namespace NaryTreeDavid
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Tree<int> boom = new Tree<int>(5);
+            boom.addChildNode(4, boom.root);
+            Console.Write(boom.root.value);
+            Console.Write(boom.root.children);
+            Console.Read();
         }
     }
 }
